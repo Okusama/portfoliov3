@@ -1,8 +1,18 @@
 {
   "presentation_bloc": {
-    "1920": {
-      "path": "M0,0 L0,100 L100,100 L100,0 L0,0",
-      "color": "#FFFFFF"
-    }
+      "path": "M 840,420 L 840,0 L 0,0 L 0,420 L 840,420",
+      "color": "#FE4F00"
+  },
+  "realisation_bloc": {
+      "path": "M 0,420 L 0,0 L 840,0 L 840,420 L 0,420",
+      "color": "#D9A4FC"
+  },
+  "project_bloc": {
+      "path": "M 840,0 L 840,420 L 0,420 L 0,0 L 840,0",
+      "color": "#FE003E"
+  },
+  "contact_bloc": {
+      "path": "M 0,0 L 0,420 L 840,420 L 840,0 L 0,0",
+      "color": "#FFB41D"
   }
 }
