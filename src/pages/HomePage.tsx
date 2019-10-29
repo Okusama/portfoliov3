@@ -1,8 +1,6 @@
 import React from "react";
-
-interface HomeState {
-    path: number;
-}
+import {HomeState} from "../interfaces/IHomePage";
+import * as HomeData from "../data/home_page_data.json";
 
 export default class HomePage extends React.Component<HomeState> {
 
@@ -11,7 +9,22 @@ export default class HomePage extends React.Component<HomeState> {
     constructor(props: any){
         super(props);
         this.state = {
-            path: 0
+            presentation_bloc: {
+                path: HomeData.presentation_bloc["1920"].path,
+                color: HomeData.presentation_bloc["1920"].color
+            },
+            realisation_bloc: {
+                path: "",
+                color: ""
+            },
+            project_bloc: {
+                path: "",
+                color: ""
+            },
+            contact_bloc: {
+                path: "",
+                color: ""
+            }
         };
     }
 
@@ -19,7 +32,6 @@ export default class HomePage extends React.Component<HomeState> {
         return(
             <div>
                 <h1>Home page</h1>
-                {this.state.path}
             </div>
         );
     }
